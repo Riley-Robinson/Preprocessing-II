@@ -168,10 +168,30 @@ img {
 }
 .container {
   max-width: 800px;
-  width: 100%;
+  width: 90%;
   margin: 0 auto;
 }
 /*components here*/
+header {
+  width: 100%;
+  border-bottom: 2px dashed #C0C0C0;
+  display: flex;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+}
+header nav {
+  width: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 0 0 30%;
+}
+header nav a {
+  text-decoration: none;
+  font-size: 2rem;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -184,13 +204,20 @@ img {
   padding: 20px;
 }
 .home .welcome {
-  width: 90%;
   display: flex;
   flex-direction: column;
+  border-bottom: 2px dashed #C0C0C0;
 }
 .home .welcome .welcometext {
   display: flex;
-  margin: 90%;
+  flex-direction: column;
+}
+.home .welcome .welcometext h2 {
+  font-size: 4rem;
+  margin: 2% 0 0 0;
+}
+.home .welcome .welcometext p {
+  margin: 2% 0;
 }
 .home .content-section {
   margin: 30px 0;
