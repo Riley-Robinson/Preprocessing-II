@@ -1,1 +1,51 @@
 // Navigation Styles here
+
+
+header{
+    width: 100%;
+    border-bottom: 2px dashed @navigation-border;
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+
+    @media @phone-down {
+        display: flex;
+        flex-direction: column;
+        
+        width: 100%;
+       
+      
+    }
+
+
+    nav{
+        width: 40%;
+        display: flex;
+        justify-content:space-evenly;
+        align-items: center;
+        margin: 0 0 0 30%;
+
+
+        @media @phone-down {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+            margin: 0;
+           
+
+          }
+
+        
+
+        a{
+            text-decoration: none;
+            font-size: 2rem;
+          
+
+        }
+
+    }
+
+}
