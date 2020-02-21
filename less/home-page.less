@@ -1,5 +1,7 @@
 .home {
-
+ 
+  
+  
 
   .welcome{
     
@@ -7,13 +9,30 @@
     flex-direction: column;
     .border();
 
-
+    
     .welcometext{
       display: flex;
       flex-direction: column;
+
+      @media @phone-down {
+        display: flex;
+        flex-direction: column;
+        
+        
+      }
+  
       h2{
         font-size: 4rem;
         margin: 2% 0 0 0;
+
+      
+        @media @phone-down {
+          display: flex;
+          flex-direction: column;
+         
+         
+        }
+    
       }
       p{
         margin: 2% 0;
@@ -29,15 +48,37 @@
 
 
 
+
+    @media @phone-down {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+     
+    }
     
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @phone-down {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+
+
+      @media @phone-down {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+      }
 
       img {
         border-radius: 10px;
@@ -49,9 +90,25 @@
     padding-bottom: 30px;
     .border();
 
+    @media @phone-down {
+      display: flex;
+      flex-direction: column-reverse;
+      width: 100%;
+     
+    }
+
+    
+
     .text-content {
       padding-left: 1%;
       padding-right: 0;
+
+      @media @phone-down {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+       
+      }
     }
 
     .img-content {
@@ -64,6 +121,13 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @phone-down {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      
+    }
+
     img {
       border-radius: 10px;
     }
@@ -75,10 +139,24 @@
     display: flex;
     justify-content: space-between;
 
+    @media @phone-down {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+     
+    }
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
 
+
+      @media @phone-down {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+      }
 
       .btn{
         .custom-btn();
